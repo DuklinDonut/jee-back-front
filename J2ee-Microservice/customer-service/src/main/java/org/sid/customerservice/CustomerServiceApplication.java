@@ -19,9 +19,9 @@ public class CustomerServiceApplication {
     CommandLineRunner start(CustomerRepository customerRepository, RepositoryRestConfiguration restConfiguration){
         restConfiguration.exposeIdsFor(Customer.class);
         return args -> {
-            customerRepository.save(new Customer(null,"Mohamed","med@gmail.com"));
-            customerRepository.save(new Customer(null,"Hassan","Hassan@gmail.com"));
-            customerRepository.save(new Customer(null,"Hamza","Hamza@gmail.com"));
+            customerRepository.save(new Customer(null,"Mohamed","mohamedyoussfi@gmail.com"));
+            customerRepository.save(new Customer(null,"Hanane","Hanane@gmail.com"));
+            customerRepository.save(new Customer(null,"fatima ezzahra majidi","fatimaezzahramajidi@gmail.com"));
             customerRepository.findAll().forEach(customer -> {
                 System.out.println(customer.toString());
             });
